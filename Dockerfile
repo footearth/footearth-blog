@@ -10,9 +10,9 @@ RUN \
   /bin/bash -l -c 'cnpm install -g gitbook-cli' && \
 
   # git clone
-  git clone https://github.com/Mooxe000/mooxe-docker-gitbook.git
+  git clone https://github.com/footearth/footearth.github.io.git
 
-WORKDIR /root/mooxe-docker-gitbook
+WORKDIR /root/footearth.github.io
 
 # npm install
 RUN \
@@ -20,6 +20,6 @@ RUN \
   /bin/bash -l -c 'cnpm install' && \
   /bin/bash -l -c 'npm run build'
 
-CMD ["/root/mooxe-docker-gitbook/start.sh"]
+CMD ["/root/footearth.github.io/start.sh"]
 
 EXPOSE 3000

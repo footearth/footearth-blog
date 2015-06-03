@@ -1,16 +1,16 @@
 # PUBLIC CONFIG
-name: 'mooxe-docker-gitbook'
+name: 'footearth.github.io'
 version: '0.0.0'
-description: 'mooxe-docker-gitbook'
+description: 'footearth.github.io'
 author: 'FooTearth <footearth@gmail.com>'
-main: 'run.coffee'
+main: 'start.sh'
 license: 'MIT'
 repository:
   type: 'git'
-  url: 'https://github.com/Mooxe000/mooxe-docker-gitbook.git'
+  url: 'https://github.com/footearth/footearth.github.io.git'
 bugs:
-  url: 'https://github.com/Mooxe000/mooxe-docker-gitbook/issues'
-homepage: 'https://github.com/Mooxe000/mooxe-docker-gitbook'
+  url: 'https://github.com/footearth/footearth.github.io/issues'
+homepage: 'https://github.com/footearth/footearth.github.io'
 Keywords: [
   'docker'
   'daocloud'
@@ -31,13 +31,13 @@ npm:
     stop: 'pm2 kill'
     restart: 'npm stop; npm start'
 
-    clean: 'rm -rf ./build; rm -rf ./dist'
-    build: 'gitbook build ./src; mv ./src/_book/ ./build'
+    clean: 'rm -rf ./src/_book; rm -rf ./build; rm -rf ./dist'
+    build: 'gitbook build -v 2.1.0 ./src; mv ./src/_book/ ./build'
     serve: 'hs ./build'
 
     docker_build: 'docker build --rm -t mooxe/gitbook ./'
-    docker_in: 'docker run -t -i -p 80:3000 mooxe/gitbook /bin/bash/'
-    docker_run: 'docker run -d -p 80:3000 mooxe/gitbook'
+    docker_in: 'docker run -t -i -p \\80\\:3000 mooxe/gitbook /bin/bash/'
+    docker_run: 'docker run -d -p \\80\\:3000 mooxe/gitbook'
 
     test: ''
   dependencies: []
@@ -46,6 +46,12 @@ npm:
     'shelljs'
     'toa'
     'toa-static'
+
+    gulp: [
+      'npb-coffee'
+      'run-sequence'
+      'gulp-gh-pages'
+    ]
   ]
 
 # NPB CONFIG

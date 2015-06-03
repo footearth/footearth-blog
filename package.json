@@ -1,18 +1,18 @@
 {
-  "name": "mooxe-docker-gitbook",
+  "name": "footearth.github.io",
   "version": "0.0.0",
-  "description": "mooxe-docker-gitbook",
+  "description": "footearth.github.io",
   "author": "FooTearth <footearth@gmail.com>",
-  "main": "run.coffee",
+  "main": "start.sh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mooxe000/mooxe-docker-gitbook.git"
+    "url": "https://github.com/footearth/footearth.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/Mooxe000/mooxe-docker-gitbook/issues"
+    "url": "https://github.com/footearth/footearth.github.io/issues"
   },
-  "homepage": "https://github.com/Mooxe000/mooxe-docker-gitbook",
+  "homepage": "https://github.com/footearth/footearth.github.io",
   "Keywords": [
     "docker",
     "daocloud",
@@ -24,7 +24,7 @@
     "start": "pm2 dump && pm2 startOrRestart ./bin/gitbook.pm2.json",
     "stop": "pm2 kill",
     "restart": "npm stop; npm start",
-    "clean": "rm -rf ./build; rm -rf ./dist",
+    "clean": "rm -rf ./src/_book; rm -rf ./build; rm -rf ./dist",
     "build": "gitbook build ./src; mv ./src/_book/ ./build",
     "serve": "hs ./build",
     "docker_build": "docker build --rm -t mooxe/gitbook ./",
@@ -34,9 +34,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "coffee-script": "^1.9.2",
+    "coffee-script": "^1.9.3",
+    "gulp": "*",
+    "gulp-gh-pages": "*",
+    "npb-coffee": "*",
+    "run-sequence": "*",
     "shelljs": "^0.5.0",
-    "toa": "^0.9.2",
-    "toa-static": "^0.3.2"
+    "toa": "*",
+    "toa-static": "*"
   }
 }
