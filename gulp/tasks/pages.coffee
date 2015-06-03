@@ -5,4 +5,8 @@ module.exports = ->
 
   gulp.src './build/**/*'
 
-  .pipe ghPages()
+  .pipe ghPages
+    push: true
+    cacheDir: '.tmp'
+    remoteUrl: 'https://github.com/footearth/footearth.github.io.git'
+    branch: 'master'
