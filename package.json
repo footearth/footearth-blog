@@ -1,18 +1,18 @@
 {
-  "name": "footearth.github.io",
+  "name": "footearth-blog",
   "version": "0.0.0",
-  "description": "footearth.github.io",
+  "description": "footearth-blog",
   "author": "FooTearth <footearth@gmail.com>",
   "main": "start.sh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/footearth/footearth.github.io.git"
+    "url": "https://github.com/footearth/footearth-blog.git"
   },
   "bugs": {
-    "url": "https://github.com/footearth/footearth.github.io/issues"
+    "url": "https://github.com/footearth/footearth-blog/issues"
   },
-  "homepage": "https://github.com/footearth/footearth.github.io",
+  "homepage": "https://github.com/footearth/footearth-blog",
   "Keywords": [
     "docker",
     "daocloud",

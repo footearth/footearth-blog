@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "gitbook",
+      "name": "footearth-blog",
       "script": "./bin/gitbook.js",
       "watch": [
         "dist"
