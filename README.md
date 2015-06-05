@@ -1,1 +1,1 @@
-# footearth-blog
+# Footearth's Blog
