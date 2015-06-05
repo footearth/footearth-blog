@@ -54,6 +54,7 @@
 
 * 官站：http://www.miniyun.cn/
 * GITHUB: https://github.com/MiniYun/miniyun
+* 桔子: http://itjuzi.com/company/7127
 * 团队属地：南京 转战 成都 原因不明
 * 特点
 	1. server 端 php 跨平台，运行环境部署麻烦

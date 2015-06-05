@@ -1,7 +1,11 @@
 # 关于我
 
 * 坐标：上海
-* 博客地址：http://blog.footearth.org
+* 博客地址：
+  * 国外：http://footearth.github.io
+    * github: https://github.com/footearth/footearth.github.io
+  * 国内：http://blog.footearth.org
+    * github: https://github.com/footearth/footearth-blog
 * `GITHUB`
   * 个人自用的会放在 footearth id 下面
     * https://github.com/footearth
@@ -24,6 +28,7 @@
 * 寻找 创业小伙伴
 * 寻找 天使投资人
 * 找到之前 远程工作 或者 兼职 满足 生活所需
+
 * 感兴趣的方向
   * 创业 & 技术 资讯
     * 面向 Geek 的 建站
@@ -34,6 +39,7 @@
     * 技术沙龙
     * hackson
     * 国外优秀公开课
+  * 自由程序员 服务平台
   * 私有云 存储 计算 桌面
   * 英语学习（默写）
   * VR 相关周边生态
