@@ -7,6 +7,52 @@ JWT 约定了必须使用 压缩编码 并 经过 JSON WEB Signature（JWS） �
 * 由 Auth0 团队创建的关于 jwt 的站点 http://jwt.io/
 * 标准 http://tools.ietf.org/html/rfc7519
 
+## jwt token 的组成
+
+![](https://kjur.github.io/jsjws/jws_generate.png)
+![](http://qqucg.com/wp-content/uploads/2015/03/toptal-blog-image-1426676395222-1.jpeg)
+
+## node 下应用举例
+
+最简使用的方式，只使用简单加密的签名验签
+
+由于 jwt token 的数据域是可以直接反解出来的，
+所以 数据域 中只存放 索引信息，如 user_id
+
+### 签发 token
+
+```coffeescript
+jwt = require 'jsonwebtoken'
+
+token_seed = 'example'
+user_id = '000001'
+orderToken = (user_id) ->
+  jwt.sign
+    id: user_id
+  , token_seed
+```
+
+### 验证 token
+```coffeescript
+decodedToken = (token) ->
+  jwt.verify token
+  , token_seed
+
+checkToken = (token) ->
+  {id} = decodedToken token
+  id
+```
+
+### 更安全的做法
+
+* token_seed 可以是动态的，一次性的
+* 也可以使用其他加密方式 -- TODO
+
+### 其他解决方案
+
+* [apache-shiro](http://shiro.apache.org/)
+  * [这里有一份为完成的翻译稿](https://github.com/waylau/apache-shiro-1.2.x-reference)
+
 ----
 
 ## 参考资料
