@@ -31,9 +31,12 @@ npm:
     stop: 'pm2 kill'
     restart: 'npm stop; npm start'
 
+    dev: 'gitbook serve -v 2.1.0 ./src'
+
     clean: 'rm -rf ./build; rm -rf ./dist; rm -rf ./.tmp/'
     build: 'gitbook build ./src --gitbook=2.1.0; mv ./src/_book/ ./build'
     serve: 'hs ./build'
+    rebuild: 'npm run clean; npm run build; npm run serve'
 
     publish: 'npm run clean; npm run build; gulp pages; npm run clean'
 
