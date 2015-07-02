@@ -38,14 +38,14 @@
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "*",
-    "gitbook-plugin-baiduana": "https://registry.npm.taobao.org/gitbook-plugin-baiduana/download/gitbook-plugin-baiduana-1.0.0.tgz",
-    "gitbook-plugin-ga": "^0.2.1",
-    "gulp": "*",
-    "gulp-gh-pages": "*",
-    "npb-coffee": "*",
-    "run-sequence": "*",
     "shelljs": "*",
     "toa": "*",
-    "toa-static": "*"
+    "toa-static": "*",
+    "gitbook-plugin-ga": "*",
+    "gitbook-plugin-baiduana": "*",
+    "npb-coffee": "*",
+    "run-sequence": "*",
+    "gulp-gh-pages": "*",
+    "gulp": "*"
   }
 }
