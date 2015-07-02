@@ -9,6 +9,6 @@ RUN /bin/bash -l -c 'cnpm install -g gitbook-cli'
 
 COPY start.sh /root/start.sh
 
-CMD ["/root/footearth-blog/start.sh"]
+CMD ["/root/start.sh"]
 
 EXPOSE 3000
