@@ -1,0 +1,17 @@
+{
+  "gitbook": ">=2.1.0",
+  "title": "FooTearth's Blog",
+  "description": "This is FooTearth's blog!",
+  "plugins": [
+    "ga",
+    "baiduana"
+  ],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-64711138-1"
+    },
+    "baidu": {
+      "token": "7b055c31721e998a648b5dd9373bb3e3"
+    }
+  }
+}
