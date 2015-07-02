@@ -11,7 +11,7 @@ host: hx.gy
 port: 1080
 ```
 
-[我的推广链接]，一个月 10 元 RMB，充值后大家各增加 10 天使用时长。
+[我的推广链接](http://honx.in/_UzGAG4Ko1yL7_G2V)，一个月 10 元 RMB，充值后大家各增加 10 天使用时长。
 
 ## ProxyCommand
 
