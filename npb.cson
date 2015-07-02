@@ -51,6 +51,8 @@ npm:
     'shelljs'
     'toa'
     'toa-static'
+    'gitbook-plugin-ga'
+    'gitbook-plugin-baiduana'
 
     gulp: [
       'npb-coffee'
