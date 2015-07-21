@@ -31,7 +31,7 @@
     "rebuild": "npm run clean; npm run build; npm run serve",
     "publish": "npm run clean; npm run build; gulp pages; npm run clean",
     "docker_build": "docker build --rm -t mooxe/gitbook ./",
-    "docker_in": "docker run -t -i -p 80:3000 mooxe/gitbook /bin/bash/",
+    "docker_in": "docker run -t -i -p 80:3000 mooxe/gitbook /bin/bash",
     "docker_run": "docker run -d -p 80:3000 mooxe/gitbook",
     "test": ""
   },

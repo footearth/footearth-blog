@@ -10,6 +10,7 @@
 
 * [2015.07](201507/index.md)
   * [使用红杏公益代理加速 GITHUB](201507/git_proxy.md)
+  * [使用 gitbook versions](201507/gitbook_versions.md)
 
 * [编译原理](Compilers/index.md)
 
